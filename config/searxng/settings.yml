@@ -3,10 +3,11 @@ use_default_settings: true
 server:
   secret_key: "__SEARXNG_SECRET__"
 
+default_doi_resolver: "https://doi.org"
+
 search:
   safe_search: 0
   autocomplete: ""
-  default_doi_resolver: "https://doi.org"
   formats:
     - html
     - json
