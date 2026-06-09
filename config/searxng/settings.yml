@@ -3,7 +3,15 @@ use_default_settings: true
 server:
   secret_key: "__SEARXNG_SECRET__"
 
-default_doi_resolver: "https://doi.org"
+doi_resolvers:
+  oadoi.org: 'https://oadoi.org/'
+  doi.org: 'https://doi.org/'
+  doai.io: 'https://dissem.in/'
+  sci-hub.se: 'https://sci-hub.se/'
+  sci-hub.st: 'https://sci-hub.st/'
+  sci-hub.ru: 'https://sci-hub.ru/'
+
+default_doi_resolver: 'oadoi.org'
 
 search:
   safe_search: 0
